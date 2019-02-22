@@ -8,6 +8,44 @@ GridPane {
   -fx-vgap: 10px;
 }
 
+* {
+
+  dark-primary-color: #00796B;
+  default-primary-color: #009688;
+  light-primary-color: #7090df;
+  text-primary-color: #FFFFFF;
+  accent-color: #ffa24a;
+  primary-text-color: #212121;
+  secondary-text-color: #8a8a8a;
+  divider-color: #BDBDBD;
+}
+
+.root {
+  -fx-background-color: secondary-text-color;
+}
+
+.button {
+  -fx-font: 16px "Arial";
+  -fx-text-fill: primary-text-color;
+  -fx-background-color: accent-color;
+  -fx-effect: dropshadow(one-pass-box, primary-text-color, 14, 0.0, 6, 0);
+  -fx-background-radius: 8;
+}
+
+.toggle-button {
+  -fx-font: 16px "Arial";
+  -fx-text-fill: primary-text-color;
+  -fx-background-color: light-primary-color;
+  -fx-effect: dropshadow(one-pass-box, primary-text-color, 14, 0.0, 6, 0);
+  -fx-background-radius: 8;
+}
+
+.text {
+  -fx-font: 18px "Arial Bold";
+  -fx-text-fill: primary-text-color;
+
+}
+
 #viewScroller {
   -fx-hbar-policy: never;
   -fx-vbar-policy: never;
